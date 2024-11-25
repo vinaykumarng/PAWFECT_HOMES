@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawfect Homes</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -21,11 +21,24 @@
             </div>
         </div>
     </header>
-    <div class="main">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginform">
+            <div class="input-container">
+                <input type="email" name="login" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input-container">
+                <input type="password" name="login" id="password" placeholder="Enter Your Password" required>
+            </div>
+            <div class="checkbox-cont">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Agree with <a href="#">Terms and conditions</a></label>
+            </div>
+            <button type="submit">Login</button>
+            <hr>
+            <p>Dont have a account? <a href="#">Regester</a></p>
+        </form>
     </div>
 </body>
 </html>
