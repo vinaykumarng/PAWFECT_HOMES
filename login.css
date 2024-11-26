@@ -2,9 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFF8E7;
+    background-color: white;
 }
-
+a{
+    text-decoration: none;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -38,11 +40,12 @@ header {
 }
 .nav-right div a i{
     font-size: 20px;
+    color: #ff6b6b;
 }
 
 .login-container{
     max-width: 350px;
-    border: 1px solid #40BFC1;
+    border: 1px solid #ff6b6b;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: auto;
@@ -60,10 +63,12 @@ header {
     padding: 10px 5px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    border: 1px solid #FFF8E7;
+    border: none;
+    border-radius: 10px;
+    outline: none;
 }
 .login-container button{
-    background-color: #40BFC1;
+    background-color: #ff6b6b;
     width: 100%;
     padding: 10px 5px;
     margin-top: 20px;
@@ -73,6 +78,6 @@ header {
 }
 .login-container a{
     text-decoration: none;
-    color: #0066c0;
+    color: #ff6b6b;
 }
 
