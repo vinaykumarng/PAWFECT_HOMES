@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoption Form</title>
   <link rel="stylesheet" href="adopt.css">
+  <script>
+    function redirectToPetSelection() {
+      const selectedPet = document.querySelector('input[name="pet-type"]:checked');
+      if (selectedPet) {
+        if (selectedPet.value === "cat") {
+          window.location.href = "select-cat.html";
+        } else if (selectedPet.value === "dog") {
+          window.location.href = "select-dog.html";
+        }
+      } else {
+        alert("Please select a pet type first!");
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>Adopt a Pet</h1>
@@ -18,15 +32,23 @@
     <label for="address">Address:</label>
     <input type="text" id="address" name="address" placeholder="Enter your address" required>
 
-    <label for="email">E-mail:</label>
-    <input type="text" id="email" name="email" placeholder="Enter your E-mail address" required>
-
     <label for="house-photo">Upload a Picture of Your House:</label>
     <input type="file" id="house-photo" name="house-photo" accept="image/*" required>
 
     <label for="description">Why are you adopting a pet?</label>
     <textarea id="description" name="description" placeholder="Describe your reasons..." required></textarea>
 
+    <label>Choose a Pet Type:</label>
+    <div class="radio-group">
+      <input type="radio" id="cat" name="pet-type" value="cat" required>
+      <label for="cat">Cat</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="dog" name="pet-type" value="dog" required>
+      <label for="dog">Dog</label>
+    </div>
+
+    <button type="button" onclick="redirectToPetSelection()">Select a Pet -></button>
     <button type="submit">Submit Application</button>
   </form>
 </body>
