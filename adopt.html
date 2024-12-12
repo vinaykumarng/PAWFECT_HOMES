@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Form</title>
+  <link rel="stylesheet" href="adopt.css">
+</head>
+<body>
+  <h1>Adopt a Pet</h1>
+  <form action="submit-adoption.php" method="post" enctype="multipart/form-data">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your E-mail address" required>
+
+    <label for="house-photo">Upload a Picture of Your House:</label>
+    <input type="file" id="house-photo" name="house-photo" accept="image/*" required>
+
+    <label for="description">Why are you adopting a pet?</label>
+    <textarea id="description" name="description" placeholder="Describe your reasons..." required></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</body>
+</html>
