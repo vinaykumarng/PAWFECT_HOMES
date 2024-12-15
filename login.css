@@ -1,12 +1,19 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-image: url(./assets/cats.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -16,20 +23,21 @@ header {
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
     font-size: 35px;
     font-weight: bold;
     color: #FFF8E7;
 }
 
-.nav-right{
+.nav-right {
     display: flex;
     justify-content: right;
     align-items: center;
     gap: 15px;
 }
 
-.nav-right div{
+.nav-right div {
     width: 50px;
     height: 50px;
     display: flex;
@@ -38,46 +46,72 @@ header {
     align-items: center;
     border-radius: 50%;
 }
-.nav-right div a i{
+
+.nav-right div a i {
     font-size: 20px;
     color: #ff6b6b;
 }
 
-.login-container{
-    max-width: 350px;
+.login-container {
+    max-width: 600px; 
+    width: 100%;
     border: 1px solid #ff6b6b;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
     margin: auto;
-    margin-top: 20px;
-    padding: 20px 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px; 
     text-align: left;
 }
 
-.login-container h2{
-    font-size: 35px;
+.login-container h2 {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.input-container input{
+.input-container input {
     width: 100%;
-    padding: 10px 5px;
-    margin-bottom: 15px;
+    padding: 12px 8px; 
+    margin-bottom: 20px;
     box-sizing: border-box;
     border: none;
     border-radius: 10px;
     outline: none;
-}
-.login-container button{
-    background-color: #ff6b6b;
-    width: 100%;
-    padding: 10px 5px;
-    margin-top: 20px;
-}
-.login-container hr{
-    margin: 20px;
-}
-.login-container a{
-    text-decoration: none;
-    color: #ff6b6b;
+    font-size: 16px; 
 }
 
+.login-container button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px; 
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #ff4b4b; 
+}
+
+.login-container hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #ff6b6b;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
