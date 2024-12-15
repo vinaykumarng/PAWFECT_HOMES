@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    color: white;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -16,16 +17,17 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.3); /* Slightly transparent white */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Applies blur to the background */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid #ff6b6b;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
   }
   
   h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
   }
   
   ul {
@@ -57,7 +59,7 @@ body {
   
   .btn {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #ff6b6b;
     color: white;
     border: none;
     border-radius: 5px;
