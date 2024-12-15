@@ -30,7 +30,7 @@ form {
   border: 1px solid #ff6b6b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   font-size: 16px;
 }
@@ -50,14 +50,17 @@ input, textarea, select {
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 14px;
+  
 }
 
 textarea {
   height: 80px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 button {
-  background-color: #40BFC1;
+  background-color: #ff6b6b;
   color: white;
   border: none;
   padding: 10px 15px; 
@@ -69,7 +72,7 @@ button {
 }
 
 button:hover {
-  background-color: #2fa8a9;
+  background-color: #ff6b6b;
 }
 
 .radio-group {
@@ -84,7 +87,7 @@ button:hover {
   margin: 5px;
   border: none;
   border-radius: 5px;
-  accent-color: #40BFC1;
+  accent-color: #ff6b6b;
 }
 
 .radio-group label {
