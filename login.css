@@ -110,8 +110,11 @@ header {
 .login-container a {
     text-decoration: none;
     color: #ff6b6b;
-    display: block;
     text-align: center;
     font-size: 14px;
     margin-top: 15px;
+}
+
+.checkbox-cont label,p{
+    color: white;
 }
