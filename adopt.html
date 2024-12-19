@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adoption Form</title>
+  <title>Adopt a Pet</title>
   <link rel="stylesheet" href="adopt.css">
   <script src="adopt.js" defer></script>
 </head>
 <body>
   <h1>Adopt a Pet</h1>
-  <form id="adoptionForm">
+  <form id="adoptionForm" action="#" method="post" enctype="multipart/form-data">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
@@ -27,16 +27,17 @@
 
     <label>Choose a Pet Type:</label>
     <div class="radio-group">
-      <input type="radio" id="cat" name="pet-type" value="cat">
+      <input type="radio" id="cat" name="pet-type" value="cat" required>
       <label for="cat">Cat</label>
     </div>
     <div class="radio-group">
-      <input type="radio" id="dog" name="pet-type" value="dog">
+      <input type="radio" id="dog" name="pet-type" value="dog" required>
       <label for="dog">Dog</label>
     </div>
 
     <button type="button" onclick="redirectToPetSelection()">Select a Pet</button>
-    <button type="submit" onclick="handleSubmit()">Submit Application</button>
+    <button type="submit">Submit Application</button>
+    <button type="button" onclick="clearForm()">Clear Form</button>
   </form>
 </body>
 </html>

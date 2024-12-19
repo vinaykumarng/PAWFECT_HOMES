@@ -33,16 +33,17 @@ function restoreFormData() {
         }
       });
     }
-  } 
-  else {
+  } else {
     // Clear localStorage for new visits
     localStorage.removeItem('adoptionFormData');
     localStorage.removeItem('selectedPetImage');
   }
 }
+
+// Redirect to pet selection
 function redirectToPetSelection() {
-  saveFormData(); 
-  localStorage.setItem('isReturning', "true"); 
+  saveFormData();
+  localStorage.setItem('isReturning', "true");
 
   const selectedPet = document.querySelector('input[name="pet-type"]:checked');
   if (selectedPet) {
@@ -56,8 +57,10 @@ function redirectToPetSelection() {
   }
 }
 
+// Handle form submission
 function handleSubmit(event) {
-  event.preventDefault(); 
+  event.preventDefault(); // Prevent default form submission
+
   const form = document.getElementById('adoptionForm');
   const name = document.getElementById('name').value.trim();
   const phone = document.getElementById('phone').value.trim();
@@ -67,10 +70,10 @@ function handleSubmit(event) {
 
   if (!name || !phone || !address || !description || !selectedPet) {
     alert("Please fill out all fields in the form before submitting.");
-    return; 
+    return; // Stop further execution if form is incomplete
   }
-  const selectedPetImage = localStorage.getItem('selectedPetImage');
 
+  const selectedPetImage = localStorage.getItem('selectedPetImage');
   let message = `Congratulations, ${name}!`;
   if (selectedPetImage) {
     message += ` You have successfully adopted your pet!`;
@@ -79,6 +82,8 @@ function handleSubmit(event) {
   }
 
   alert(message);
+
+  // Clear form and localStorage after submission
   localStorage.removeItem('adoptionFormData');
   localStorage.removeItem('selectedPetImage');
   localStorage.removeItem('isReturning');
@@ -86,6 +91,17 @@ function handleSubmit(event) {
   window.location.href = "index.html";
 }
 
+// Clear form data and localStorage
+function clearForm() {
+  const form = document.getElementById('adoptionForm');
+  form.reset();
+  localStorage.removeItem('adoptionFormData');
+  localStorage.removeItem('selectedPetImage');
+  localStorage.removeItem('isReturning');
+  alert("Form has been cleared.");
+}
+
+// Initialize: Restore form data only if returning
 document.addEventListener('DOMContentLoaded', () => {
   restoreFormData();
   const form = document.getElementById('adoptionForm');
