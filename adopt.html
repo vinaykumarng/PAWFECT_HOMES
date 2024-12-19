@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Adopt a Pet</h1>
-  <form action="submit-adoption.php" method="post" enctype="multipart/form-data">
+  <form id="adoptionForm">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
@@ -27,16 +27,16 @@
 
     <label>Choose a Pet Type:</label>
     <div class="radio-group">
-      <input type="radio" id="cat" name="pet-type" value="cat" required>
+      <input type="radio" id="cat" name="pet-type" value="cat">
       <label for="cat">Cat</label>
     </div>
     <div class="radio-group">
-      <input type="radio" id="dog" name="pet-type" value="dog" required>
+      <input type="radio" id="dog" name="pet-type" value="dog">
       <label for="dog">Dog</label>
     </div>
 
     <button type="button" onclick="redirectToPetSelection()">Select a Pet</button>
-    <button type="submit">Submit Application</button>
+    <button type="submit" onclick="handleSubmit()">Submit Application</button>
   </form>
 </body>
 </html>
