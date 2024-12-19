@@ -7,6 +7,5 @@ checkbox.addEventListener('change', function() {
 
 proceedButton.addEventListener('click', function() {
   alert('Thank you for agreeing to the Terms and Conditions! Proceeding to profile creation...');
-  // Redirect to the next page
-  window.location.href = "profile_creation.html"; // Change this to your desired next page
+  window.location.href = "login.html"; 
 });
