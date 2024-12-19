@@ -5,20 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoption Form</title>
   <link rel="stylesheet" href="adopt.css">
-  <script>
-    function redirectToPetSelection() {
-      const selectedPet = document.querySelector('input[name="pet-type"]:checked');
-      if (selectedPet) {
-        if (selectedPet.value === "cat") {
-          window.location.href = "select-cat.html";
-        } else if (selectedPet.value === "dog") {
-          window.location.href = "select-dog.html";
-        }
-      } else {
-        alert("Please select a pet type first!");
-      }
-    }
-  </script>
+  <script src="adopt.js" defer></script>
 </head>
 <body>
   <h1>Adopt a Pet</h1>
