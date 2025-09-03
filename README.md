@@ -4,7 +4,7 @@ Designed an interactive dashboard showcasing pet adoption data, enabling users t
 
 Clone the Repository
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/vinaykumarng/PAWFECT_HOMES.git
 
 
 Navigate to the Project Folder
