@@ -2,6 +2,7 @@
 Designed an interactive dashboard showcasing pet adoption data, enabling users to explore adoption trends, availability, and shelter information through visual insights.
 
 🚀 How to Use
+
 Clone the Repository
 git clone https://github.com/vinaykumarng/PAWFECT_HOMES.git
 
